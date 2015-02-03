@@ -6,7 +6,7 @@ f = open('foo1.txt' , 'rU')
 fname = f.read()
 f.close()
 
-match = re.findall(r'\w+@\w+.\w\w\w', fname)
+match = re.findall(r'as\S+', fname)
 #if match:
 #	print match.group()
 for line in match:
